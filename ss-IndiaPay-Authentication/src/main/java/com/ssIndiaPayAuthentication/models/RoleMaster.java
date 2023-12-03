@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import jakarta.persistence.*;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -25,11 +25,11 @@ public class RoleMaster {
     @Column(name = "IS_ACTIVE")
     private boolean isActive;
     @Column(name = "CREATED_DATE")
-    private Date createdDate;
+    private LocalDateTime createdDate;
     @Column(name = "CREATED_BY")
     private Integer createdBy;
     @Column(name = "MODIFIED-DATE")
-    private Date modifiedDate;
+    private LocalDateTime modifiedDate;
     @Column(name = "MODIFIED_BY")
     private Integer modifiedBy;
 }
